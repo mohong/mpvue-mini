@@ -11,7 +11,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-import { getGoodsList, baseUrl } from '../../api/api'
+// import { getGoodsList, baseUrl } from '../../api/api'
 export default {
   data () {
     return {
@@ -20,10 +20,10 @@ export default {
   },
   created () {
     console.log('get goods list')
-    let that = this
-    getGoodsList().then(function (res) {
-      that.goods = that.formatData(res.data.result.list)
-    })
+    // let that = this
+    // getGoodsList().then(function (res) {
+    //   that.goods = that.formatData(res.data.result.list)
+    // })
   },
   onPullDownRefresh () {
     console.log('onPullDownRefresh')
@@ -34,7 +34,7 @@ export default {
   methods: {
     formatData (list) {
       list.forEach(item => {
-        item.productImage = `${baseUrl}/static/${item.productImage}`
+        // item.productImage = `${baseUrl}/static/${item.productImage}`
       })
       return list
     },
