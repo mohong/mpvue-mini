@@ -1,7 +1,11 @@
 <template>
-  <div class="container" @click="clickHandle('test click', $event)">
-
-  </div>
+  <div class="nowplaying">
+    <ul>
+      <li @click="bindViewTap(movie.id)" v-for="movie in movies" :key="movie">
+        <card :movie="movie"></card>
+      </li>
+    </ul>
+    </div>
 </template>
 
 <script>
@@ -15,14 +19,12 @@ export default {
       movies: []
     }
   },
-
   components: {
     card
   },
-
   methods: {
-    bindViewTap () {
-      const url = '../goods/main'
+    bindViewTap (id) {
+      const url = `../detail/main?id=${id}`
       wx.navigateTo({ url })
     },
     getUserInfo () {
@@ -36,9 +38,6 @@ export default {
         }
       })
     },
-    clickHandle (msg, ev) {
-      console.log('clickHandle:', msg, ev)
-    },
     _getHotMovies () {
       getHotMovies().then(res => {
         console.log(res)
@@ -46,40 +45,20 @@ export default {
       })
     }
   },
-
   created () {
     this._getHotMovies()
   }
 }
 </script>
 
-<style scoped>
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 150px;
-}
-
-.form-control {
-  display: block;
-  padding: 0 12px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-}
-
+<style lang="stylus" rel="stylesheet/stylus">
+    .nowplaying
+        background: #f8f8f8
+        .nowplaying-wrapper
+            position: absolute
+            display: block
+            width: 100%
+            top: 40px
+            bottom: 10px
+            overflow: hidden
 </style>

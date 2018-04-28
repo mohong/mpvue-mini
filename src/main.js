@@ -17,18 +17,6 @@ export default {
       navigationBarBackgroundColor: '#2ABE7B',
       navigationBarTitleText: '最新电影',
       navigationBarTextStyle: '#ffffff'
-    },
-    tabBar: {
-      list: [{
-        pagePath: 'pages/logs/main',
-        text: '日志'
-      }, {
-        pagePath: 'pages/goods/main',
-        text: '商品'
-      }, {
-        pagePath: 'pages/goods/main',
-        text: '商品'
-      }]
     }
   }
 }

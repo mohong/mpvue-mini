@@ -16,3 +16,8 @@ export function getHotMovies () {
   let url = `/movie/hot`
   return fly.get(url)
 }
+
+export function getDetail (id) {
+  let url = `/movie/detail?id=${id}`
+  return fly.get(url)
+}
