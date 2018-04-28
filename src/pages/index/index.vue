@@ -5,11 +5,15 @@
         <card :movie="movie"></card>
       </li>
     </ul>
+    <div class="center-btn">
+      <center-btn></center-btn>
     </div>
+  </div>
 </template>
 
 <script>
 import card from '@/components/card'
+import CenterBtn from '@/components/center-btn'
 import { login, getHotMovies } from '../../api/api'
 
 export default {
@@ -20,7 +24,8 @@ export default {
     }
   },
   components: {
-    card
+    card,
+    CenterBtn
   },
   methods: {
     bindViewTap (id) {
@@ -54,11 +59,10 @@ export default {
 <style lang="stylus" rel="stylesheet/stylus">
     .nowplaying
         background: #f8f8f8
-        .nowplaying-wrapper
-            position: absolute
-            display: block
-            width: 100%
-            top: 40px
-            bottom: 10px
-            overflow: hidden
+        position: relative
+        .center-btn
+          position: fixed
+          right: 0
+          bottom: 100px
+          color: red
 </style>
