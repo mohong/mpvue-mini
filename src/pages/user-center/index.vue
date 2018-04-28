@@ -2,11 +2,11 @@
   <div>
     <div class="header">
         <div class="user" v-if="userInfo">
-          <img class="avatar" :src="userInfo.avatar">
-          <p class="username">{{userInfo.username}}</p>
+          <img class="avatar" :src="userInfo.avatarUrl">
+          <p class="username">{{userInfo.nickName}}</p>
         </div>
         <div v-else class="cover">
-          <img class="avatar blank" src="/static/images/avatar.png">
+          <img @click="getUserInfo" class="avatar blank" src="/static/images/avatar.png">
         </div>
     </div>
   </div>
@@ -16,10 +16,17 @@
 export default {
   data () {
     return {
-      userInfo: {
-        username: '周冬雨',
-        avatar: 'https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p36798.jpg'
-      }
+      userInfo: ''
+    }
+  },
+  methods: {
+    getUserInfo () {
+      let that = this
+      wx.getUserInfo({
+        success (ret) {
+          that.userInfo = ret.userInfo
+        }
+      })
     }
   }
 }
