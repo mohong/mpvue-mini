@@ -5,7 +5,7 @@
         <card :movie="movie"></card>
       </li>
     </ul>
-    <div class="center-btn">
+    <div class="center-btn" @click="toUserCenter">
       <center-btn></center-btn>
     </div>
   </div>
@@ -45,9 +45,12 @@ export default {
     },
     _getHotMovies () {
       getHotMovies().then(res => {
-        console.log(res)
         this.movies = res.subjects
       })
+    },
+    toUserCenter () {
+      const url = '../user-center/main'
+      wx.navigateTo({url})
     }
   },
   created () {

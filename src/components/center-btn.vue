@@ -22,6 +22,7 @@ export default {
     padding: 5px
     border-top-left-radius: 30px
     border-bottom-left-radius: 30px
+    box-shadow: 0 0 3px #f8f8f8
     .icon
       width: 18px
       height: 18px
