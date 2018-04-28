@@ -14,7 +14,7 @@
 <script>
 import card from '@/components/card'
 import CenterBtn from '@/components/center-btn'
-import { login, getHotMovies } from '../../api/api'
+import { login, getNowMovies } from '../../api/api'
 
 export default {
   data () {
@@ -43,8 +43,8 @@ export default {
         }
       })
     },
-    _getHotMovies () {
-      getHotMovies().then(res => {
+    _getNowMovies () {
+      getNowMovies().then(res => {
         this.movies = res.subjects
       })
     },
@@ -54,7 +54,7 @@ export default {
     }
   },
   created () {
-    this._getHotMovies()
+    this._getNowMovies()
   }
 }
 </script>

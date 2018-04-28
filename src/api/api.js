@@ -12,8 +12,8 @@ export function login (code) {
   })
 }
 
-export function getHotMovies () {
-  let url = `/movie/hot`
+export function getNowMovies () {
+  let url = `/movie/now`
   return fly.get(url)
 }
 
