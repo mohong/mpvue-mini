@@ -9,6 +9,9 @@ const token = wx.getStorageSync('token')
 fly.interceptors.request.use((config, promise) => {
     // 给所有请求添加自定义header
   config.headers['token'] = token
+  wx.showLoading({
+    title: '加载中'
+  })
   return config
 })
 
@@ -17,6 +20,7 @@ fly.interceptors.response.use(
     (response) => {
       // Do something with response data .
       // Just return the data field of response
+      wx.hideLoading()
       return response.data
     },
     (err) => {

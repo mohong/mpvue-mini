@@ -5,10 +5,12 @@ export function getGoodsList (params) {
   return fly.get(url)
 }
 
-export function login (code) {
+export function login (code, encryptedData, iv) {
   let url = `/auth/login`
   return fly.post(url, {
-    code: code
+    code: code,
+    encryptedData: encryptedData,
+    iv: iv
   })
 }
 

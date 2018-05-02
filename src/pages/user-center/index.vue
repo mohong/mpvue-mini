@@ -13,6 +13,8 @@
 </template>
 
 <script type="text/ecmascript-6">
+import {login} from '../../api/api'
+
 export default {
   data () {
     return {
@@ -22,9 +24,20 @@ export default {
   methods: {
     getUserInfo () {
       let that = this
-      wx.getUserInfo({
-        success (ret) {
-          that.userInfo = ret.userInfo
+      wx.login({
+        success (ret1) {
+          const code = ret1.code
+          wx.getUserInfo({
+            success (ret2) {
+              const encryptedData = ret2.encryptedData
+              const iv = ret2.iv
+              login(code, encryptedData, iv).then(ret3 => {
+                const token = ret3.token
+                that.userInfo = ret2.userInfo
+                wx.setStorageSync('token', token)
+              })
+            }
+          })
         }
       })
     }
