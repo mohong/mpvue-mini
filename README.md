@@ -30,4 +30,4 @@ npm run build --report
 
 ### GIF动画：
 
-[请点击]((http://ob9qd20l4.bkt.clouddn.com/image-mini.gif)
+[请点击](http://ob9qd20l4.bkt.clouddn.com/image-mini.gif)
