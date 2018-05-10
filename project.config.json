@@ -42,6 +42,12 @@
 					"name": "user-center",
 					"pathName": "pages/user-center/main",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "电影详情",
+					"pathName": "pages/detail/main",
+					"query": "id=26924141"
 				}
 			]
 		}

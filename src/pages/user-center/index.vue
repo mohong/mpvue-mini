@@ -9,6 +9,18 @@
           <img @click="getUserInfo" class="avatar blank" src="/static/images/avatar.png">
         </div>
     </div>
+    <div v-if="userInfo" class="action">
+      <p class="item">
+        <!-- 需要增加接口 -->
+        <span>收藏</span><span>30</span>
+      </p>
+      <p class="item">
+        <span>喜欢</span><span>12</span>
+      </p>
+      <p class="item">
+        <span>评论</span><span>20</span>
+      </p>
+    </div>
   </div>
 </template>
 
@@ -70,4 +82,14 @@ export default {
                 margin-top: 10px
                 color: #ffffff
                 font-size: 14px
+    .action
+      .item
+        color: #999
+        font-size: 14px
+        padding:  0 30px
+        height: 60px
+        line-height: 60px
+        border-bottom: 1px solid #f8f8f8
+        display: flex
+        justify-content: space-between
 </style>

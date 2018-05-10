@@ -1,6 +1,6 @@
 const Fly = require('flyio/dist/npm/wx')
 const fly = new Fly()
-export const baseUrl = 'http://127.0.0.1:3000'
+export const baseUrl = 'http://192.168.199.131:3000'
 
 // 配置请求基地址
 fly.config.baseURL = baseUrl

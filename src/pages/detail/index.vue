@@ -16,6 +16,9 @@
         <img :src="movie.images.large">
       </div>
     </div>
+    <scroll-view class="scroll" scroll-x style="width: 100%">
+      <img class="view" :src="cast.avatars.medium" v-for="cast in movie.casts" :key="cast.id">
+    </scroll-view>
     <div class="content-wrapper">
       <div class="summary">
         {{movie.summary}}
@@ -97,6 +100,18 @@ export default {
                 img
                     width: 100%
                     height: 100%
+        .scroll
+          display: flex
+          white-space nowrap
+          ::-webkit-scrollbar 
+            width: 0
+            height: 0
+            color: transparent
+          .view
+            height: 128px
+            width: 128px
+            border: 1px solid #fff
+            display: inline-block
         .summary
             margin: 10px
             padding: 10px
