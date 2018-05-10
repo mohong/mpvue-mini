@@ -23,8 +23,8 @@ npm run build --report
 ## UI截图：
 
 <img width=300 src="http://ob9qd20l4.bkt.clouddn.com/image-mini1.png" />
-<img src="http://ob9qd20l4.bkt.clouddn.com/image-mini2.png" />
-<img src="http://ob9qd20l4.bkt.clouddn.com/image-mini3.png" />
+<img width=300  src="http://ob9qd20l4.bkt.clouddn.com/image-mini2.png" />
+<img width=300  src="http://ob9qd20l4.bkt.clouddn.com/image-mini3.png" />
 
 ### GIF动画：
 ![GIF动画](http://ob9qd20l4.bkt.clouddn.com/image-mini.gif)
