@@ -29,4 +29,5 @@ npm run build --report
 </div>
 
 ### GIF动画：
+
 ![GIF动画](http://ob9qd20l4.bkt.clouddn.com/image-mini.gif)
