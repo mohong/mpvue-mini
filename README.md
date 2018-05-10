@@ -1,8 +1,9 @@
 # mpvue-demo
 
-> A Mpvue project
+> 使用mpVue开发的小程序
 
-## Build Setup
+
+## 构建
 
 ``` bash
 # install dependencies
@@ -18,4 +19,13 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## UI截图：
+
+<div style="display: flex">
+    <img style="flex: 1; margin: 20px" src="http://ob9qd20l4.bkt.clouddn.com/image-mini1.png" />
+    <img style="flex: 1; margin: 20px"  src="http://ob9qd20l4.bkt.clouddn.com/image-mini2.png" />
+    <img style="flex: 1; margin: 20px" src="http://ob9qd20l4.bkt.clouddn.com/image-mini3.png" />
+</div>
+
+![GIF动画](http://ob9qd20l4.bkt.clouddn.com/image-mini.gif)
