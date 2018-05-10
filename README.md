@@ -24,8 +24,8 @@ npm run build --report
 
 <div style="display:flex; justify-content: space-between;">
 <img width=250  src="http://ob9qd20l4.bkt.clouddn.com/image-mini01.png" />
-<img width=250   src="http://ob9qd20l4.bkt.clouddn.com/image-mini02.png" />
 <img width=250   src="http://ob9qd20l4.bkt.clouddn.com/image-mini03.png" />
+<img width=250   src="http://ob9qd20l4.bkt.clouddn.com/image-mini02.png" />
 </div>
 
 ### GIF动画：
