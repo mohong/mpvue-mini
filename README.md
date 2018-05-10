@@ -23,9 +23,9 @@ npm run build --report
 ## UI截图：
 
 <div style="display:flex; justify-content: space-between;">
-<img width=300  src="http://ob9qd20l4.bkt.clouddn.com/image-mini1.png" />
-<img width=300   src="http://ob9qd20l4.bkt.clouddn.com/image-mini2.png" />
-<img width=300   src="http://ob9qd20l4.bkt.clouddn.com/image-mini3.png" />
+<img width=250  src="http://ob9qd20l4.bkt.clouddn.com/image-mini1.png" />
+<img width=250   src="http://ob9qd20l4.bkt.clouddn.com/image-mini2.png" />
+<img width=250   src="http://ob9qd20l4.bkt.clouddn.com/image-mini3.png" />
 </div>
 
 ### GIF动画：
