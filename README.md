@@ -27,7 +27,3 @@ npm run build --report
 <img width=250   src="http://ob9qd20l4.bkt.clouddn.com/image-mini03.png" />
 <img width=250   src="http://ob9qd20l4.bkt.clouddn.com/image-mini02.png" />
 </div>
-
-### GIF动画：
-
-[请点击](http://ob9qd20l4.bkt.clouddn.com/image-mini.gif)
