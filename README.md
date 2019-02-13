@@ -1,6 +1,6 @@
-# mpvue-demo
+# mpvue-mini
 
-> 使用mpVue开发的小程序
+> 使用mpVue开发的电影快讯小程序
 
 
 ``` bash
